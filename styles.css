@@ -679,22 +679,18 @@ body {
 
 
 
-@media (max-width: 578px) {
+@media screen and (max-width: 578px) {
   :root {
-    --building-color1: #000;
-    --building-color2: #000;
-    --building-color3: #000;
-    --building-color4: #000;
-    --window-color1: #777;
-    --window-color2: #777;
-    --window-color3: #777;
-    --window-color4: #777;
+    --building-color1: #000!important;
+    --building-color2: #000!important;
+    --building-color3: #000!important;
+    --building-color4: #000!important;
+    --window-color1: #777!important;
+    --window-color2: #777!important;
+    --window-color3: #777!important;
+    --window-color4: #777!important;
   }
   
-  body {
-    background-color: #121212;
-    color: #f0f0f0;
-  }
   
   .sky {
     background: radial-gradient(
@@ -703,7 +699,12 @@ body {
       #ccc 20%,
       #445 21%,
       #223 100%
-    );
+      )!important;
+    }
+    
+    body {
+    background-color: #121212;
+    color: #f0f0f0;
   }
 
   .title-landing {
@@ -727,11 +728,14 @@ body {
   }
 
   .large {
-    font-size: 2rem;
+    font-size: 4rem;
   }
 
   .nav {
     background-color: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav a {
@@ -761,6 +765,8 @@ body {
   .pulsing-element,
   .bouncing-element {
     background-image: linear-gradient(45deg, #444, #666 45%);
+    width: 50px;
+    height: 50px;
   }
 
   .aside-content ul li a:link {
@@ -781,6 +787,17 @@ body {
 
   .animation-example h2{
     color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .transition-example h2 {
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  .color-transition, .size-transition, .opacity-transition {
+    width: 50px;
+    height: 50px;
   }
 
   .footer {
