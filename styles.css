@@ -27,6 +27,9 @@ body {
   margin: 0;
 }
 
+.containerbuildings {
+  overflow: hidden;
+}
 /* MARK: LANDING */
 
 .title-landing {
